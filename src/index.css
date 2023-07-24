@@ -1,0 +1,28 @@
+:root {
+  --green0: #093326;
+  --green1: #0c4536;
+  --green2: #105f38;
+  --green3: #1c842c;
+  --green4: #26a437;
+  --green5: #2ea857;
+  --white0: #f7f7f7;
+  --grey: #b3b3b3;
+  --grey: #666666;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+body {
+  background-color: #0c4536;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
