@@ -8,6 +8,8 @@
   --white0: #f7f7f7;
   --grey: #b3b3b3;
   --grey: #666666;
+  --font-slab: "Roboto Slab", serif;
+  --font-rubik: "Rubik", sans-serif;
 }
 * {
   margin: 0;
@@ -15,10 +17,10 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-rubik);
 }
 body {
-  background-color: #0c4536;
+  background-color: #03100d;
 }
 
 .flex {

@@ -3,25 +3,27 @@
   height: calc(1.25rem + 6vh);
   padding: 0 calc(0.625rem + 5vw);
   background-color: #0933262c;
-  backdrop-filter: blur(1.25rem);
+  backdrop-filter: blur(1rem);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
-
 .header__logo {
   font-size: calc(1.375rem + 1vw);
   font-weight: 700;
   color: #fff;
-  font-family: "Rubik", sans-serif;
+  font-family: var(--font-slab);
+  cursor: pointer;
 }
-
 .menu__item {
   margin: 0 calc(0.125rem + 1vw);
   font-family: "Rubik", sans-serif;
   color: #fff;
   cursor: pointer;
   position: relative;
-  font-size: calc(.5rem + .5vw);
+  font-size: calc(0.5rem + 0.5vw);
 }
-
 .menu__item:not(.menu__item:last-child):before {
   content: "";
   position: absolute;
@@ -34,7 +36,6 @@
   transform-origin: left;
   transition: 200ms ease-in-out;
 }
-
 .menu__item:hover:not(.menu__item:last-child):before {
   transform: scaleX(1);
 }

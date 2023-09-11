@@ -1,3 +1,3 @@
 # IT Center Revolution
 
-## made by <a href="https://ilhomjon.vercel.app">Ilhomjon </a> with 🖤
+## Designed and Built by <a href="https://ilhomjon.vercel.app" target="_blank" rel="noopener noreferrer"> Ilhomjon </a> with 🖤

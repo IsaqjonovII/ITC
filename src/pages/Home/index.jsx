@@ -1,11 +1,12 @@
-import React from 'react'
+import ParticlesJSX from "../../components/Particles";
+import "./style.css";
 
 const Home = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <main className="main">
+      <ParticlesJSX />
+    </main>
+  );
+};
 
-export default Home
+export default Home;

@@ -1,0 +1,28 @@
+.main {
+  width: 100%;
+  height: auto;
+  min-height: 60vh;
+  justify-content: center;
+  padding: calc(20px + 1vh) calc(0.625rem + 5vw);
+}
+.main__content {
+  width: 100%;
+  max-width: 1550px;
+  margin: auto;
+  height: 100%;
+  text-align: center;
+  color: var(--white0);
+}
+
+.main__title {
+  font-family: var(--font-slab);
+  font-size: calc(0.6rem + 1vw);
+}
+.title__label {
+  color: var(--green5);
+  font-family: var(--font-slab);
+  font-weight: 800;
+  font-size: calc(0.8rem + 1vw);
+  text-shadow: 3px 0px 40px var(--green5);
+  line-height: 2;
+}

@@ -1,18 +1,18 @@
 .sidebar {
   width: 100%;
-  max-width: 300px;
   height: 300px;
   background-color: #0933262c;
   backdrop-filter: blur(20px);
   position: absolute;
   top: calc(1.3rem + 6vh);
-  right: calc(20px + 5vw);
   padding: 1.25rem;
   opacity: 0;
   transform: scale(0);
   transform-origin: top right;
   transition: 150ms ease-in-out;
   border-radius: 0.8rem;
+  z-index: 999;
+  text-align: center;
 }
 .sidebar__link {
   font-size: 1.15rem;
