@@ -2,7 +2,7 @@
   width: 100%;
   height: 300px;
   background-color: #0933262c;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(5px);
   position: absolute;
   top: calc(1.3rem + 6vh);
   padding: 1.25rem;

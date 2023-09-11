@@ -6,17 +6,22 @@
     "events": {
       "onClick": {
         "enable": true,
-        "mode": "push"
+        "mode": "connect"
       },
       "onHover": {
         "enable": true,
-        "mode": "connect"
+        "mode": "repulse"
       },
-      "resize": false
+      "resize": true
     },
     "modes": {
       "push": {
-        "quantity": 2
+        "quantity": 2,
+        "links": {
+          "enable": false,
+          "opacity": 0.5,
+          "distance": 200
+        }
       },
       "connect": {
         "distance": 80,
@@ -34,7 +39,7 @@
     "links": {
       "color": "#2ea8579b",
       "distance": 150,
-      "enable": true,
+      "enable": false,
       "opacity": 0.5,
       "width": 1
     },
@@ -48,7 +53,7 @@
         "default": "bounce"
       },
       "random": false,
-      "speed": 3,
+      "speed": 1.8,
       "straight": false
     },
     "number": {
