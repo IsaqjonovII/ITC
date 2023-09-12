@@ -2,8 +2,10 @@
   width: 100%;
   height: auto;
   min-height: 60vh;
-  justify-content: center;
   padding: calc(20px + 1vh) calc(0.625rem + 5vw);
+  position: relative;
+  display: grid;
+  place-items: center;
 }
 .main__content {
   width: 100%;
@@ -12,8 +14,9 @@
   height: 100%;
   text-align: center;
   color: var(--white0);
+  position: absolute;
+  inset: 0;
 }
-
 .main__title {
   font-family: var(--font-slab);
   font-size: calc(0.6rem + 1vw);

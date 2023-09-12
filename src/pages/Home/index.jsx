@@ -5,6 +5,9 @@ const Home = () => {
   return (
     <main className="main">
       <ParticlesJSX />
+      <div className="main__content">
+        <h1></h1>
+      </div>
     </main>
   );
 };
