@@ -16,16 +16,32 @@
   color: var(--white0);
   position: absolute;
   inset: 0;
+  display: grid;
+  place-items: center;
 }
-.main__title {
-  font-family: var(--font-slab);
-  font-size: calc(0.6rem + 1vw);
+
+.content__text {
+  font-family: var(--font-rowdies);
+  font-size: calc(10px + 2vw);
+  user-select: none;
+  text-align: left;
+  & span {
+    font-family: var(--font-rowdies);
+  }
 }
-.title__label {
+.connect__btn {
+  padding: 10px 20px;
+  border: 2px solid var(--green5);
+  background-color: transparent;
   color: var(--green5);
-  font-family: var(--font-slab);
-  font-weight: 800;
-  font-size: calc(0.8rem + 1vw);
-  text-shadow: 3px 0px 40px var(--green5);
-  line-height: 2;
+  font-family: var(--font-rowdies);
+  font-size: calc(2px + 1vw);
+  margin-top: calc(20px + 1vh);
+  border-radius: 8px;
+  transition: 250ms ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--green5);
+    color: var(--white0);
+  }
 }

@@ -22,11 +22,11 @@
 }
 .menu__item {
   margin: 0 calc(0.125rem + 1vw);
-  font-family: "Rubik", sans-serif;
   color: #fff;
   cursor: pointer;
   position: relative;
   font-size: calc(0.5rem + 0.5vw);
+  font-family: var(--font-russo);
 }
 .menu__item__link {
   color: inherit;
@@ -66,7 +66,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  font-family: "Rubik", sans-serif;
+  font-family: var(--font-russo);
 }
 
 .contact__btn:hover {
