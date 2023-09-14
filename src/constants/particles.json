@@ -6,17 +6,17 @@
     "events": {
       "onClick": {
         "enable": true,
-        "mode": "connect"
+        "mode": "push"
       },
       "onHover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "connect"
       },
       "resize": true
     },
     "modes": {
       "push": {
-        "quantity": 2,
+        "quantity": 3,
         "links": {
           "enable": false,
           "opacity": 0.5,
@@ -53,7 +53,7 @@
         "default": "bounce"
       },
       "random": false,
-      "speed": 1.8,
+      "speed": 1,
       "straight": false
     },
     "number": {
