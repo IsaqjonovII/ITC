@@ -8,11 +8,7 @@
   --white0: #f7f7f7;
   --grey: #b3b3b3;
   --grey: #666666;
-  --font-slab: "Roboto Slab", serif;
-  --font-rubik: "Rubik", sans-serif;
-  --font-rowdies: "Rowdies", cursive;
-  --font-russo: "Russo One", sans-serif;
-  --font-web: "Titillium Web", sans-serif;
+  --font: 'Unbounded', sans-serif;
 }
 * {
   margin: 0;
@@ -21,10 +17,10 @@
   text-decoration: none;
   list-style-type: none;
   outline: none;
-  font-family: var(--font-rubik);
+  font-family: var(--font);
 }
 body {
-  background-color: var(--green0);
+  background-color: var(--green1);
 }
 
 .flex {

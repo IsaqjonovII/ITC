@@ -1,8 +1,8 @@
-import { useEffect, useRef } from "react";
-import ParticlesJSX from "../../components/Particles";
-import "./style.css";
 import Typed from "typed.js";
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { BG } from "../../assets";
+import "./style.css";
 
 const Home = () => {
   const el = useRef(null);
@@ -18,15 +18,17 @@ const Home = () => {
   }, []);
   return (
     <main className="main">
-      <ParticlesJSX />
       <div className="main__content">
         <div className="content__text">
-          <span ref={el}></span> <br /> <span>IT Centerda</span> o'rganing
+          <span ref={el}></span> <br /> <span>IT CENTERda</span> o&apos;rganing
           <br />
           <Link to="/contact">
-            <button className="connect__btn">Biz bilan bog'laning</button>
+            <button className="connect__btn">Biz bilan bog&apos;laning</button>
           </Link>
         </div>
+      </div>
+      <div className="home__banner">
+        <img src={BG} alt="" />
       </div>
     </main>
   );

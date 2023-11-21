@@ -3,7 +3,8 @@
   height: calc(1.25rem + 6vh);
   padding: 0 calc(0.625rem + 5vw);
   background-color: #0933262c;
-  backdrop-filter: blur(1rem);
+  backdrop-filter: blur(8px) brightness(1) contrast(1) grayscale(0)
+    hue-rotate(0) invert(0) opacity(1) saturate(1) sepia(0);
   position: sticky;
   top: 0;
   left: 0;

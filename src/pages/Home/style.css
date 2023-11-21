@@ -3,38 +3,30 @@
   height: auto;
   min-height: 60vh;
   padding: calc(20px + 1vh) calc(0.625rem + 5vw);
-  position: relative;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
 }
 .main__content {
-  width: 100%;
-  max-width: 1550px;
-  margin: auto;
-  height: 100%;
   text-align: center;
   color: var(--white0);
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
 }
-
+.home__banner {
+  width: 50%;
+  height: 100%;
+  & img {
+    width: 100%;
+  }
+}
 .content__text {
-  font-family: var(--font-rowdies);
   font-size: calc(10px + 3vw);
   user-select: none;
   text-align: left;
-  & span {
-    font-family: var(--font-rowdies);
-  }
 }
 .connect__btn {
   padding: 10px 20px;
   border: 2px solid var(--green5);
   background-color: transparent;
   color: var(--green5);
-  font-family: var(--font-rowdies);
   font-size: calc(2px + 1vw);
   margin-top: calc(20px + 1vh);
   border-radius: 8px;
@@ -46,7 +38,7 @@
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .connect__btn {
     font-size: calc(5px + 1vw);
   }
@@ -54,11 +46,11 @@
     font-size: calc(1rem + 5vw);
   }
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
   .connect__btn {
     font-size: 13px;
   }
   .content__text {
-    font-size: calc(.5rem + 5vw); 
+    font-size: calc(0.5rem + 5vw);
   }
 }
