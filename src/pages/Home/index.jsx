@@ -1,7 +1,7 @@
-import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { BG } from "assets";
+import Typed from "typed.js";
+import { BG, phoneIcon } from "assets";
 import "./style.css";
 
 const Home = () => {
@@ -9,8 +9,8 @@ const Home = () => {
   useEffect(() => {
     const typedText = new Typed(el.current, {
       strings: ["Kasblarni", "Dasturlashni"],
-      typeSpeed: 80,
-      backSpeed: 120,
+      typeSpeed: 120,
+      backSpeed: 40,
       loop: true,
     });
 
@@ -22,8 +22,11 @@ const Home = () => {
         <div className="content__text">
           <span ref={el}></span> <br /> <span>IT CENTERda</span> o&apos;rganing
           <br />
-          <Link to="/contact">
-            <button className="connect__btn">Biz bilan bog&apos;laning</button>
+          <Link to="tel:+998337505151">
+            <button className="connect__btn">
+              Bog&apos;lanish
+              <img src={phoneIcon} alt="" />
+            </button>
           </Link>
         </div>
       </div>

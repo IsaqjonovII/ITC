@@ -6,7 +6,7 @@
   border-bottom: 1px solid #2ea85727;
   backdrop-filter: blur(8px) brightness(1) contrast(1) grayscale(0)
     hue-rotate(0) invert(0) opacity(1) saturate(1) sepia(0);
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
