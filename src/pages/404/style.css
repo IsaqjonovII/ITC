@@ -1,6 +1,6 @@
 .pagenotfound__banner {
   width: 100%;
-  height: 100vh;
+  height: 100lvh;
   position: absolute;
   top: 0;
   left: 0;
@@ -15,14 +15,12 @@
   color: var(--white0);
 }
 .title__404 {
-  font-family: var(--font-rowdies);
   font-size: calc(1.8rem + 1vw);
   line-height: 1;
 }
 .subtitle__404 {
   font-size: calc(2rem + 1vw);
   line-height: 1.3;
-  font-family: var(--font-rowdies);
 }
 .label__404 {
   display: flex;
@@ -32,14 +30,15 @@
   z-index: -1;
 }
 .four__404 {
-  font-size: calc(10rem + 5vw);
-  margin: 0 calc(0.2rem + 1vw);
-  font-family: var(--font-russo);
+  font-size: calc(8rem + 5vw);
+  margin: 0 calc(0.1rem + 1vw);
   color: var(--green2);
+  font-weight: 700 !important;
+  font-family: var(--font);
 }
 .back__link {
+  font-family: var(--font);
   color: var(--green5);
-  font-family: var(--font-russo);
 }
 
 @media screen and (max-width: 400px) {

@@ -1,13 +1,18 @@
-import { useState } from "react";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-import NotFound from "./pages/404/index";
+import { useEffect, useState } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Home from "pages/Home";
+import Contact from "pages/Contact";
+import NotFound from "pages/404/index";
+import Navbar from "components/Navbar";
+import Sidebar from "components/Sidebar";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const { pathname } = useLocation();
+  useEffect(() => {
+    setIsSidebarOpen(false);
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div>

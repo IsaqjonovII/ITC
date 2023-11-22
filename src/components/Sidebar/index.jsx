@@ -1,7 +1,6 @@
-import React from "react";
-import "./style.css";
-import { sidebarRoutes } from "../../routes";
 import { Link } from "react-router-dom";
+import "./style.css";
+import { sidebarRoutes } from "routes";
 
 const Sidebar = ({ isSidebarOpen }) => {
   return (

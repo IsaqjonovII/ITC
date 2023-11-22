@@ -1,6 +1,5 @@
-import React from "react";
-import "./style.css";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 const NotFound = () => {
   return (
@@ -12,7 +11,7 @@ const NotFound = () => {
       </div>
       <div className="content__404">
         <h1 className="title__404">iyyy...</h1>
-        <h1 className="subtitle__404">Nimadur bo'ldii...</h1>
+        <h1 className="subtitle__404">Xatolik ketdii...</h1>
         <Link className="back__link" to="/">
           Asosiy sahifaga qaytish
         </Link>
