@@ -3,6 +3,7 @@
   height: calc(1.25rem + 6vh);
   padding: 0 calc(0.625rem + 5vw);
   background-color: #0933262c;
+  border-bottom: 1px solid #2ea85727;
   backdrop-filter: blur(8px) brightness(1) contrast(1) grayscale(0)
     hue-rotate(0) invert(0) opacity(1) saturate(1) sepia(0);
   position: sticky;
@@ -11,15 +12,14 @@
   z-index: 999;
 }
 .header__logo {
-  font-size: calc(1.375rem + 1vw);
+  font-size: calc(1rem + 1vw);
   font-weight: 700;
   color: #fff;
-  font-family: var(--font-slab);
   cursor: pointer;
-  transition: text-shadow 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
 }
 .header__logo:hover {
-  text-shadow: 0px 2px 80px var(--green4);
+  color: var(--green5);
 }
 .menu__item {
   margin: 0 calc(0.125rem + 1vw);
@@ -27,11 +27,12 @@
   cursor: pointer;
   position: relative;
   font-size: calc(0.5rem + 0.5vw);
-  font-family: var(--font-russo);
 }
 .menu__item__link {
   color: inherit;
   font-size: inherit;
+  font-family: var(--font);
+  font-weight: 300;
 }
 .menu__item:not(.menu__item:last-child):before {
   content: "";
@@ -46,7 +47,7 @@
   transition: 200ms ease-in-out;
 }
 .menu__item:hover:not(.menu__item:last-child):before {
-  transform: scaleX(1.2);
+  transform: scaleX(.7);
 }
 
 .contact__btn {
@@ -67,7 +68,6 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  font-family: var(--font-russo);
 }
 
 .contact__btn:hover {

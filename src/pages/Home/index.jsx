@@ -1,7 +1,7 @@
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { BG } from "../../assets";
+import { BG } from "assets";
 import "./style.css";
 
 const Home = () => {

@@ -2,13 +2,13 @@
 import { Link } from "react-router-dom";
 import "./style.css";
 import BarsIcon from "./../BarsIcon/index";
-import { sidebarRoutes } from "./../../routes/index";
+import { sidebarRoutes } from "routes";
 
 const Navbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   return (
     <header className="header flex">
       <Link to="/">
-        <h1 className="header__logo">IT Center</h1>
+        <h1 className="header__logo">IT CENTER</h1>
       </Link>
 
       <nav className="header__menu flex">
@@ -21,8 +21,8 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
             </li>
           ))}
           <li className="menu__item">
-            <Link to="/contact">
-              <button className="contact__btn">Kontaktlar</button>
+            <Link to="tel:+998337505151">
+              <button className="contact__btn">+998 33 750 51 51</button>
             </Link>
           </li>
         </ul>
