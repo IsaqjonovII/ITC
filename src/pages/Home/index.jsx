@@ -21,8 +21,8 @@ const Home = () => {
       <main className="main">
         <div className="main__content">
           <div className="content__text">
-            <span ref={el}></span> <br /> <span>IT CENTERda</span>{" "}
-            o&apos;rganing
+            <span ref={el}></span> <br />{" "}
+            <span className="logo">IT CENTER</span>da o&apos;rganing
             <br />
             <Link to="tel:+998337505151">
               <button className="connect__btn">
@@ -36,8 +36,10 @@ const Home = () => {
           <img src={BG} alt="" />
         </div>
       </main>
-      <section>
-
+      <section id="why" className="section">
+        <h1 className="section__title">
+          Nima uchun IT Center? <br /> <br /> Chunki:{" "}
+        </h1>
       </section>
     </div>
   );

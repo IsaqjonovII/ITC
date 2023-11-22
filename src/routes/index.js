@@ -13,7 +13,7 @@ export const sidebarRoutes = [
   },
   {
     id: ++id,
-    path: "/teachers",
-    title: "O'qituvchilar",
+    path: "#why",
+    title: "Nimaga ITC?",
   },
 ];

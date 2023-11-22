@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: calc(1.25rem + 6vh);
+  height: 10vh;
   padding: 0 calc(0.625rem + 5vw);
   background-color: #0933262c;
   border-bottom: 1px solid #2ea85727;
@@ -43,7 +43,7 @@
   transition: 200ms ease-in-out;
 }
 .menu__item:hover:not(.menu__item:last-child):before {
-  transform: scaleX(.7);
+  transform: scaleX(0.7);
 }
 .contact__btn {
   align-self: center;
@@ -54,7 +54,7 @@
   font-family: var(--font);
   cursor: pointer;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.825rem;
   line-height: 1.4375rem;
   padding: 0.75rem 1.25rem;
   transition: all 235ms ease-in-out;

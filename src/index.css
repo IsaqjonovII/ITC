@@ -8,15 +8,17 @@
   --white0: #f7f7f7;
   --grey: #b3b3b3;
   --grey1: #666666;
-  --font-sans: 'PT Sans', sans-serif;
+  --font-sans: "PT Sans", sans-serif;
   --font: "Unbounded", sans-serif;
 }
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
   box-sizing: border-box;
 }
-ul, li {
+ul,
+li {
   list-style-type: none;
 }
 a {

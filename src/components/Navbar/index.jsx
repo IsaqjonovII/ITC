@@ -8,7 +8,7 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   return (
     <div className="header flex">
       <Link to="/">
-        <h1 className="header__logo">IT CENTER</h1>
+        <h1 className="header__logo">ITC</h1>
       </Link>
 
       <nav className="header__menu flex">
