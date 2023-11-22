@@ -6,7 +6,7 @@ import { sidebarRoutes } from "routes";
 
 const Navbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   return (
-    <header className="header flex">
+    <div className="header flex">
       <Link to="/">
         <h1 className="header__logo">IT CENTER</h1>
       </Link>
@@ -32,7 +32,7 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         isSidebarOpen={isSidebarOpen}
         setIsSidebarOpen={setIsSidebarOpen}
       />
-    </header>
+    </div>
   );
 };
 

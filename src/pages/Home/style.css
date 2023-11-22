@@ -2,7 +2,7 @@
   width: 100%;
   height: auto;
   min-height: 40dvh;
-  padding: calc(20px + 1vh) calc(0.625rem + 5vw);
+  padding: 0 calc(0.625rem + 5vw);
   display: flex;
   align-items: center;
 }
@@ -25,9 +25,10 @@
   font-family: var(--font);
 }
 .connect__btn {
-  display: flex;
+  display: inline-flex;
   margin-top: calc(20px + 1vh);
   align-self: center;
+  font-family: var(--font);
   background-color: transparent;
   border: 0.1875rem solid var(--green5);
   box-shadow: rgba(0, 0, 0, 0.2) 0.9375rem 1.75rem 1.5625rem -1.125rem;

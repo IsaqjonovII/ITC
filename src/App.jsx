@@ -5,6 +5,7 @@ import Contact from "pages/Contact";
 import NotFound from "pages/404/index";
 import Navbar from "components/Navbar";
 import Sidebar from "components/Sidebar";
+import Courses from "pages/Courses";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -13,17 +14,23 @@ function App() {
     setIsSidebarOpen(false);
     window.scrollTo(0, 0);
   }, [pathname]);
+  useEffect(() => {
+    document.body.style.overflowY = isSidebarOpen ? "hidden" : "auto";
+  }, [isSidebarOpen]);
 
   return (
     <div>
-      <Navbar
-        isSidebarOpen={isSidebarOpen}
-        setIsSidebarOpen={setIsSidebarOpen}
-      />
-      <Sidebar isSidebarOpen={isSidebarOpen} />
+      <header className="header__container">
+        <Navbar
+          isSidebarOpen={isSidebarOpen}
+          setIsSidebarOpen={setIsSidebarOpen}
+        />
+        <Sidebar isSidebarOpen={isSidebarOpen} />
+      </header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/courses" element={<Courses />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

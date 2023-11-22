@@ -6,10 +6,6 @@
   border-bottom: 1px solid #2ea85727;
   backdrop-filter: blur(8px) brightness(1) contrast(1) grayscale(0)
     hue-rotate(0) invert(0) opacity(1) saturate(1) sepia(0);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
 }
 .header__logo {
   font-size: calc(1rem + 1vw);
@@ -49,14 +45,15 @@
 .menu__item:hover:not(.menu__item:last-child):before {
   transform: scaleX(.7);
 }
-
 .contact__btn {
   align-self: center;
   background-color: transparent;
   border: 0.1875rem solid var(--green5);
   box-shadow: rgba(0, 0, 0, 0.2) 0.9375rem 1.75rem 1.5625rem -1.125rem;
   color: var(--green5);
+  font-family: var(--font);
   cursor: pointer;
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.4375rem;
   padding: 0.75rem 1.25rem;
