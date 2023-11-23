@@ -6,6 +6,7 @@ import NotFound from "pages/404/index";
 import Navbar from "components/Navbar";
 import Sidebar from "components/Sidebar";
 import Courses from "pages/Courses";
+import Footer from "components/Footer";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -33,6 +34,7 @@ function App() {
         <Route path="/courses" element={<Courses />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
