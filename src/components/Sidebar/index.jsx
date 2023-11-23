@@ -11,9 +11,9 @@ const Sidebar = ({ isSidebarOpen }) => {
             <Link className="sidebar__link" to={path}>{title}</Link>
           </li>
         ))}
-        <li className="sidebar__link">
-          <button className="contact__btn">Kontaktlar</button>
-        </li>
+        <Link className="sidebar__link" to="tel:+998337505151">
+          <button className="contact__btn">+998 33 750 51 51</button>
+        </Link>
       </div>
     </div>
   );
