@@ -1,8 +1,9 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Typed from "typed.js";
-import { BG, phoneIcon } from "assets";
+import { BG, checkIcon, phoneIcon } from "assets";
 import "./style.css";
+import { causes } from "static";
 
 const Home = () => {
   const el = useRef(null);
@@ -38,8 +39,16 @@ const Home = () => {
       </main>
       <section id="why" className="section">
         <h1 className="section__title">
-          Nima uchun IT Center? <br /> <br /> Chunki:{" "}
+          Nima uchun IT Center? <br /> Chunki:{" "}
         </h1>
+        <ul className="causes__wrp">
+          {causes.map((el) => (
+            <li className="cause__text flex" key={el}>
+              <span>{el}</span>
+              <img src={checkIcon} alt="" />
+            </li>
+          ))}
+        </ul>
       </section>
     </div>
   );

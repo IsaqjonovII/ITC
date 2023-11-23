@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import "./style.css";
-import BarsIcon from "./../BarsIcon/index";
 import { sidebarRoutes } from "routes";
+import BarsIcon from "components/BarsIcon";
 
 const Navbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   return (
@@ -15,9 +15,15 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         <ul className="menu__wrp flex">
           {sidebarRoutes.map(({ id, title, path }) => (
             <li key={id} className="menu__item">
-              <Link className="menu__item__link" to={path}>
-                {title}
-              </Link>
+              {path.includes("#why") ? (
+                <a className="menu__item__link" href={path}>
+                  {title}
+                </a>
+              ) : (
+                <Link className="menu__item__link" to={path}>
+                  {title}
+                </Link>
+              )}
             </li>
           ))}
           <li className="menu__item">
