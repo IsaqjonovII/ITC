@@ -1,10 +1,27 @@
-/* eslint-disable react/prop-types */
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 import { sidebarRoutes } from "routes";
 import BarsIcon from "components/BarsIcon";
+import { phoneIcon } from "assets";
 
+/* eslint-disable react/prop-types */
 const Navbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
   return (
     <div className="header flex">
       <Link to="/">
@@ -33,11 +50,21 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           </li>
         </ul>
       </nav>
-
-      <BarsIcon
-        isSidebarOpen={isSidebarOpen}
-        setIsSidebarOpen={setIsSidebarOpen}
-      />
+      <div className="nav__right flex">
+        {isVisible && (
+          <li className="menu__item small">
+            <Link to="tel:+998337505151">
+              <button className="contact__btn">
+                <img src={phoneIcon} alt="" />
+              </button>
+            </Link>
+          </li>
+        )}
+        <BarsIcon
+          isSidebarOpen={isSidebarOpen}
+          setIsSidebarOpen={setIsSidebarOpen}
+        />
+      </div>
     </div>
   );
 };
