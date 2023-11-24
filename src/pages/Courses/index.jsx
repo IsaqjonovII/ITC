@@ -18,7 +18,7 @@ const Courses = () => {
               <p>{subtitle}. </p>
             </div>
 
-            <Link className={`${c.learn__more} flex`} to="/courses/:id">
+            <Link className={`${c.learn__more} flex`} to={`/courses/${title}`}>
               Batafsil
               <svg
                 width="30px"

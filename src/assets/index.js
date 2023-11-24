@@ -8,11 +8,14 @@ import smmIcon from "./smm.svg";
 import checkIcon from "./check.svg";
 import instaIcon from "./instagram.svg";
 import tgIcon from "./tg.svg";
+import codeBg from "./coding.svg";
+import backendBg from "./backend.svg";
 
 export {
   BG,
   phoneIcon,
   codeIcon,
+  backendBg,
   graphicIcon,
   serverIcon,
   androidIcon,
@@ -20,4 +23,5 @@ export {
   checkIcon,
   instaIcon,
   tgIcon,
+  codeBg,
 };

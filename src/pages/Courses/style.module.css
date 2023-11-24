@@ -49,6 +49,10 @@
   color: var(--white0);
   font-size: 24px;
 }
+.course__wrp {
+  padding: 30px calc(0.625rem + 5vw);
+  align-items: start !important;
+}
 @media screen and (max-width: 1555px) {
   .courses {
     padding: 30px 50px;
