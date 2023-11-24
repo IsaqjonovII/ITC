@@ -1,5 +1,5 @@
 .courses {
-  padding: 50px 100px;
+  padding: 30px calc(0.625rem + 5vw);
   font-family: var(--font);
 }
 .course__cards {
@@ -62,17 +62,24 @@
     object-fit: contain;
   }
 }
+@media screen and (min-width: 1024px) {
+  .course__banner img {
+    max-width: 640px;
+    max-height: 550px;
+  }
+}
 .skills__wrp {
   display: flex;
   flex-wrap: wrap;
   margin: 15px 0;
-  column-gap: 20px;
+  column-gap: 6px;
   & .skill__text {
     padding: 10px 15px;
     font-size: 16px;
     background-color: #105f38;
     font-family: var(--font);
     border-radius: 6px;
+    font-weight: 300;
     color: var(--white0);
   }
 }
