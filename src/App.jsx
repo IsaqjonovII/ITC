@@ -7,6 +7,7 @@ import Navbar from "components/Navbar";
 import Sidebar from "components/Sidebar";
 import Courses from "pages/Courses";
 import Footer from "components/Footer";
+import Course from "pages/Courses/Course";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -32,6 +33,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/courses" element={<Courses />} />
+        <Route path="/courses/:title" element={<Course />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
