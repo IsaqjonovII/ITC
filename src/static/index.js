@@ -4,6 +4,8 @@ import {
   graphicIcon,
   serverIcon,
   smmIcon,
+  instaIcon,
+  tgIcon,
 } from "assets";
 
 let id = 0;
@@ -44,5 +46,26 @@ export const coursesData = [
     subtitle: "Ijtimoiy tarmoqlarni rivojlantirish va unga postlar yaratish",
     learn__more: "",
     icon: smmIcon,
+  },
+];
+
+export const causes = [
+  "Qulay, shinam va zamonaviy xonalar",
+  "Arzon narxlar va Sifatli ta'lim",
+  "Har bir dars yozib olinadi va telegram guruhga joylab boriladi",
+  "Tajribali o'qituvchilar",
+  "Bo'sh vaqtda ham kelsangiz bo'ladi",
+  "Dam olish uchun Cyber Arena",
+];
+export const socialLinks = [
+  {
+    id: id++,
+    path: "https://instagram.com/itcenter.nurafshon",
+    icon: instaIcon,
+  },
+  {
+    id: id++,
+    path: "https://t.me/itc_nurafshon",
+    icon: tgIcon,
   },
 ];
