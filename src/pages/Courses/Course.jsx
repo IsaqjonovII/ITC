@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import c from "./style.module.css";
 import { coursesData } from "static";
-import { backendBg } from "assets";
 
 const Course = () => {
   const [courseInfo, setCourseInfo] = useState(null);
@@ -15,20 +14,29 @@ const Course = () => {
   }, [title]);
 
   return (
-    <div className={`${c.course__wrp} flex`}>
-      <section>
+    <main className={c.course__wrp}>
+      <section className={c.course__content}>
         <h1 className={c.course__title}>{courseInfo?.title}</h1>
-        <p>{courseInfo?.learn_more}</p>
+        <p className={c.course__period}>
+          Kurs davomiligi: <span>{courseInfo?.period}</span>
+        </p>
+        <hr />
+        <p className={c.course__description}>{courseInfo?.learn_more}</p>
+        <div className={c.skills__wrp}>
+          {courseInfo?.skills.map((skill) => (
+            <span key={skill} className={c.skill__text}>
+              {skill}
+            </span>
+          ))}
+        </div>
       </section>
-
-      {/* <aside> */}
-      <img
-        //   src={courseInfo?.banner}
-        src={backendBg}
-        alt={courseInfo?.title + " course banner"}
-      />
-      {/* </aside> */}
-    </div>
+      <aside className={c.course__banner}>
+        <img
+          src={courseInfo?.banner}
+          alt={courseInfo?.title + " course banner"}
+        />
+      </aside>
+    </main>
   );
 };
 

@@ -10,6 +10,9 @@ import instaIcon from "./instagram.svg";
 import tgIcon from "./tg.svg";
 import codeBg from "./coding.svg";
 import backendBg from "./backend.svg";
+import smmBg from "./smm-bg.svg";
+import androBG from "./andro.svg";
+import designBg from "./gd.svg";
 
 export {
   BG,
@@ -24,4 +27,7 @@ export {
   instaIcon,
   tgIcon,
   codeBg,
+  smmBg,
+  androBG,
+  designBg,
 };

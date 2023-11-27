@@ -35,6 +35,10 @@ h3 {
   font-family: var(--font);
   font-weight: 400 !important;
 }
+hr {
+  border: none;
+  border-top: 1px solid #38d26b48;
+}
 .header__container {
   position: sticky;
   top: 0;
