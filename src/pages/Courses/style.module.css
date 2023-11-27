@@ -50,6 +50,8 @@
   font-size: 24px;
 }
 .course__wrp {
+  max-width: 1555px;
+  margin: 0 auto;
   padding: 30px calc(0.625rem + 5vw);
   display: grid;
   align-items: center;
@@ -85,14 +87,25 @@
 }
 .course__content {
   & .course__title {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   & .course__description {
     color: var(--grey);
     font-size: clamp(1rem, 1.4rem, 1.8rem);
     font-family: var(--font-sans);
     line-height: 1.3;
+    margin-top: 20px;
   }
+  .course__period {
+    font-family: var(--font-sans);
+    color: var(--grey);
+    font-size: clamp(.825rem, 1.1rem, 1.3rem);
+    margin-bottom: 10px;
+  }
+}
+.course__period span {
+    font-family: var(--font);
+    color: var(--white0);
 }
 @media screen and (max-width: 1555px) {
   .courses {

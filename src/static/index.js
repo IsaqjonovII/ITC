@@ -24,6 +24,7 @@ export const coursesData = [
     skills: ["HTML", "CSS", "JAVASCRIPT", "GIT", "GITHUB"],
     icon: codeIcon,
     banner: codeBg,
+    period: "6 oy",
   },
   {
     id: id++,
@@ -34,6 +35,7 @@ export const coursesData = [
     skills: ["Python", "Django"],
     icon: serverIcon,
     banner: backendBg,
+    period: "6 oy",
   },
   {
     id: id++,
@@ -44,12 +46,14 @@ export const coursesData = [
     skills: ["Dart", "Flutter"],
     icon: androidIcon,
     banner: androBG,
+    period: "8 oy",
   },
   {
     id: id++,
     title: "Grafik Dizayn",
     subtitle: "Bir qarashda ko'zga tashlanadigan dizaynlar yaratadi",
-    learn_more: "Siz deyarli har kuni uchratadigan logotiplar, flayerlar, bannerlar aynan grafik dizaynerlar tomonidan yasaladi. Reklama sohasining asosida Grafik Design turadi. Shunday ekan bu sohaga doimo talab bo'ladi. ",
+    learn_more:
+      "Siz deyarli har kuni uchratadigan logotiplar, flayerlar, bannerlar aynan grafik dizaynerlar tomonidan yasaladi. Reklama sohasining asosida Grafik Design turadi. Shunday ekan bu sohaga doimo talab bo'ladi. ",
     skills: [
       "Adobe Photoshop",
       "Adobe Illustrator",
@@ -59,15 +63,24 @@ export const coursesData = [
     ],
     icon: graphicIcon,
     banner: designBg,
+    period: "6 oy",
   },
   {
     id: id++,
     title: "SMM",
     subtitle: "Ijtimoiy tarmoqlarni rivojlantirish va unga postlar yaratish",
-    learn_more: "SMM - Social Media Marketing. ",
-    skills: ["Raqamli marketing asoslari", "SEO", "Google Ads", "Kopirayting", "Biznes uchun SMM"],
+    learn_more:
+      "SMM - Social Media Marketing. Uning asosiy maqsadi ijtimoiy tarmoqlardan mijozlarni mahsulot  va xizmatlaringizga jalb etishdir. Kursimizda quyidagilarni o'rganasiz: ",
+    skills: [
+      "Raqamli marketing asoslari",
+      "SEO",
+      "Google Ads",
+      "Kopirayting",
+      "Biznes uchun SMM",
+    ],
     icon: smmIcon,
     banner: smmBg,
+    period: "2 oy",
   },
 ];
 

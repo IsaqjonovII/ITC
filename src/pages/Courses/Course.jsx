@@ -17,6 +17,10 @@ const Course = () => {
     <main className={c.course__wrp}>
       <section className={c.course__content}>
         <h1 className={c.course__title}>{courseInfo?.title}</h1>
+        <p className={c.course__period}>
+          Kurs davomiligi: <span>{courseInfo?.period}</span>
+        </p>
+        <hr />
         <p className={c.course__description}>{courseInfo?.learn_more}</p>
         <div className={c.skills__wrp}>
           {courseInfo?.skills.map((skill) => (
