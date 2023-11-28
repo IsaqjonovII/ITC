@@ -11,6 +11,7 @@ import {
   androBG,
   designBg,
   smmBg,
+  githubIcon,
 } from "assets";
 
 let id = 0;
@@ -102,5 +103,10 @@ export const socialLinks = [
     id: id++,
     path: "https://t.me/itc_nurafshon",
     icon: tgIcon,
+  },
+  {
+    id: id++,
+    path: "https://github.com/itcNurafshon",
+    icon: githubIcon,
   },
 ];
