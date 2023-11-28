@@ -13,11 +13,13 @@ import backendBg from "./backend.svg";
 import smmBg from "./smm-bg.svg";
 import androBG from "./andro.svg";
 import designBg from "./gd.svg";
+import githubIcon from "./github.svg";
 
 export {
   BG,
   phoneIcon,
   codeIcon,
+  githubIcon,
   backendBg,
   graphicIcon,
   serverIcon,
