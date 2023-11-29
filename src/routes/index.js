@@ -13,7 +13,7 @@ export const sidebarRoutes = [
   },
   {
     id: ++id,
-    path: "#why",
+    path: "/#why",
     title: "Nimaga ITC?",
   },
 ];

@@ -12,6 +12,7 @@ import Course from "pages/Courses/Course";
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const { pathname } = useLocation();
+
   useEffect(() => {
     setIsSidebarOpen(false);
     window.scrollTo(0, 0);
