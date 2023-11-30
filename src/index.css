@@ -27,7 +27,6 @@ a {
 }
 body {
   background-color: var(--green1);
-  overflow-x: hidden;
 }
 h1,
 h2,
@@ -38,6 +37,23 @@ h3 {
 hr {
   border: none;
   border-top: 1px solid #38d26b48;
+}
+.copyright {
+  padding-left: 100px;
+  padding-bottom: 0.625rem;
+  column-gap: 30px;
+  font-family: var(--font-sans);
+  color: var(--grey);
+  font-size: 15px;
+  & a {
+    color: var(--green5);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .copyright {
+    text-align: center;
+    font-size: 13px;
+  }
 }
 .header__container {
   position: sticky;

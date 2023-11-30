@@ -17,6 +17,7 @@ const Home = () => {
 
     return () => typedText.destroy();
   }, []);
+
   return (
     <div>
       <main className="main">
@@ -43,7 +44,7 @@ const Home = () => {
         </h1>
         <ul className="causes__wrp">
           {causes.map((el) => (
-            <li className="cause__text flex" key={el}>
+            <li className="cause__text flex" key={el} >
               <span>{el}</span>
               <img src={checkIcon} alt="" />
             </li>

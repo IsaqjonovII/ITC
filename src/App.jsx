@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Link, Route, Routes, useLocation } from "react-router-dom";
 import Home from "pages/Home";
 import Contact from "pages/Contact";
 import NotFound from "pages/404/index";
@@ -12,6 +12,7 @@ import Course from "pages/Courses/Course";
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const { pathname } = useLocation();
+
   useEffect(() => {
     setIsSidebarOpen(false);
     window.scrollTo(0, 0);
@@ -21,7 +22,7 @@ function App() {
   }, [isSidebarOpen]);
 
   return (
-    <div>
+    <>
       <header className="header__container">
         <Navbar
           isSidebarOpen={isSidebarOpen}
@@ -37,7 +38,18 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
-    </div>
+      <div className="copyright">
+        <p title="IT Center O'quv markazi">&copy; {"IT Center Nurafshon"}</p>
+        <span>
+          Designed and Built by{" "}
+          <Link
+            to="https://ilhomjon.dev"
+            rel="noopener noreferror"
+            target="_blank"
+          >Ilhomjon</Link>
+        </span>
+      </div>
+    </>
   );
 }
 
