@@ -53,6 +53,7 @@ hr {
   .copyright {
     text-align: center;
     font-size: 13px;
+    padding: 0 0 10px 0;
   }
 }
 .header__container {
