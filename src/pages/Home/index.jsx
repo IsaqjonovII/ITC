@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import Aos from "aos";
 import { Link } from "react-router-dom";
 import Typed from "typed.js";
 import { BG, checkIcon, phoneIcon } from "assets";
@@ -19,9 +18,6 @@ const Home = () => {
     return () => typedText.destroy();
   }, []);
 
-  useEffect(() => {
-    Aos.init();
-  }, []);
   return (
     <div>
       <main className="main">
@@ -48,7 +44,7 @@ const Home = () => {
         </h1>
         <ul className="causes__wrp">
           {causes.map((el) => (
-            <li className="cause__text flex" key={el} data-aos="flip-left">
+            <li className="cause__text flex" key={el} >
               <span>{el}</span>
               <img src={checkIcon} alt="" />
             </li>

@@ -1,11 +1,11 @@
 .footer {
   padding: 30px;
+  position: fixed;
+  bottom: 12px;
+  right: -30px;
 }
 .footer__links {
   display: grid;
-  position: fixed;
-  bottom: 12px;
-  right: 0;
   row-gap: 5px;
   padding: 10px 5px 3px 5px;
   background-color: var(--green2);
