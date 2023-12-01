@@ -9,4 +9,7 @@ export default defineConfig({
       "/api": "https://itc-nurafshon.uz",
     },
   },
+  build: {
+    target: "modules",
+  },
 });
