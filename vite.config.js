@@ -9,7 +9,12 @@ export default defineConfig({
       "/api": "https://itc-nurafshon.uz",
     },
   },
+  resolve: { alias: [{ find: "@", replacement: "/src" }] },
+  base: "./",
   build: {
+    outDir: "dist",
     target: "modules",
+    assetsDir: "assets",
+    sourcemap: true,
   },
 });
