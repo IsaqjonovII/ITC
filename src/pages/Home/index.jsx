@@ -29,13 +29,13 @@ const Home = () => {
             <Link to="tel:+998337505151">
               <button className="connect__btn">
                 Bog&apos;lanish
-                <img src={phoneIcon} alt="" />
+                <img src={phoneIcon} alt="IT Center,  Nurafshon IT Center" />
               </button>
             </Link>
           </div>
         </div>
         <div className="home__banner">
-          <img src={BG} alt="" />
+          <img src={BG} alt="IT Center Frontend kurslar, Nurafshon IT Center" />
         </div>
       </main>
       <section id="why" className="section">
@@ -44,9 +44,9 @@ const Home = () => {
         </h1>
         <ul className="causes__wrp">
           {causes.map((el) => (
-            <li className="cause__text flex" key={el} >
+            <li className="cause__text flex" key={el}>
               <span>{el}</span>
-              <img src={checkIcon} alt="" />
+              <img src={checkIcon} alt="IT Center" />
             </li>
           ))}
         </ul>

@@ -38,17 +38,6 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
-      <div className="copyright">
-        <p title="IT Center O'quv markazi">&copy; {"IT Center Nurafshon"}</p>
-        <span>
-          Designed and Built by{" "}
-          <Link
-            to="https://ilhomjon.dev"
-            rel="noopener noreferror"
-            target="_blank"
-          >Ilhomjon</Link>
-        </span>
-      </div>
     </>
   );
 }
