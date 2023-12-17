@@ -99,13 +99,23 @@
   .course__period {
     font-family: var(--font-sans);
     color: var(--grey);
-    font-size: clamp(.825rem, 1.1rem, 1.3rem);
+    font-size: clamp(0.825rem, 1.1rem, 1.3rem);
     margin-bottom: 10px;
   }
 }
 .course__period span {
-    font-family: var(--font);
-    color: var(--white0);
+  font-family: var(--font);
+  color: var(--white0);
+}
+.course__register {
+  font-family: var(--font-sans);
+  color: var(--grey);
+  font-size: clamp(0.825rem, 1.1rem, 1.3rem);
+  display: inline-block;
+  margin-top: 10px;
+  background-color: var(--green3);
+  padding: 8px 15px;
+  border-radius: 6px;
 }
 @media screen and (max-width: 1555px) {
   .courses {

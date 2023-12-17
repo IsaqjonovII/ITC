@@ -21,7 +21,7 @@ export const coursesData = [
     title: "Front-end",
     subtitle: "Vebsayt ko'rinishini chiroyli, tushinishga oson qiladi",
     learn_more:
-      "Frontend deb ilova yoki veb sahifani foydalanuvchiga ko'rinib turadigan qismiga aytiladi. Foydalanuvchi ko'rib turgan va u ishlatayotgan har qanday xususiyat bu frontenga aloqador. Frontend o'z ichiga UI (user interface) va UX (user experience) oladi. Frontend kursimizda siz quyidagi texnologiyalarni o'rganasiz:",
+      "Frontend deb ilova yoki veb sahifani foydalanuvchiga ko'rinib turadigan qismiga aytiladi. Foydalanuvchi ko'rib turgan va u ishlatayotgan har qanday xususiyat bu frontendga aloqador. Frontend o'z ichiga UI (user interface) va UX (user experience) oladi. Frontend kursimizda siz quyidagi texnologiyalarni o'rganasiz:",
     skills: ["HTML", "CSS", "JAVASCRIPT", "GIT", "GITHUB"],
     icon: codeIcon,
     banner: codeBg,

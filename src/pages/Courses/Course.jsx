@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import c from "./style.module.css";
 import { coursesData } from "static";
 
@@ -29,12 +29,19 @@ const Course = () => {
             </span>
           ))}
         </div>
+        <div>
+          <Link
+            className={c.course__register}
+            target="_blank"
+            rel="noreferrer noopener"
+            to="https://forms.gle/jzo6bPgstWhD55PG6"
+          >
+            Kursda o'qimoqchiman
+          </Link>
+        </div>
       </section>
       <aside className={c.course__banner}>
-        <img
-          src={courseInfo?.banner}
-          alt={courseInfo?.title + " course banner"}
-        />
+        <img src={courseInfo?.banner} alt={courseInfo?.title} />
       </aside>
     </main>
   );
